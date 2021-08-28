@@ -11,8 +11,7 @@ let package = Package(
     .executable(name: "SwepVaporSupportExample", targets: ["SwepVaporSupportExample"]),
   ],
   dependencies: [
-    // .package(url: "https://github.com/alja7dali/swift-web-page", from: "0.0.1"),
-    .package(url: "https://github.com/alja7dali/swift-web-page", .branch("master")),
+    .package(url: "https://github.com/alja7dali/swift-web-page", from: "0.0.1"),
     .package(url: "https://github.com/vapor/vapor", from: "4.0.0"),
   ],
   targets: [
