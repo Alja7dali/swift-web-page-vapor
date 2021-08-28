@@ -78,9 +78,11 @@ let advancedUsage = {
       }
     }
     """)
-    p("Now, in your router you can wrap the content that is specific to that page in your layout by just invoking the ")
-    code("layout(content:)")
-    p("function:")
+    div {
+      p("Now, in your router you can wrap the content that is specific to that page in your layout by just invoking the ")
+      code("layout(content:)")
+      p("function:")
+    }
     pre("""
     import Swep
     import Vapor
@@ -97,9 +99,11 @@ let advancedUsage = {
     }
     try app.run()
     """)
-    p("Now a full HTML/CSS page will be rendered, including a ")
-    code("head")
-    p(" tag with stylesheets, a header with navigation links, the main content in the middle, and a footer with a copyright notice. The best part is that because everything is just simple Swift data we are free to arrange and compose this data in anyway we want. In particular, we are allowed to keep all of our helper nodes in the same file if we want, or we can break them out into multiple files if that works better for us. Compare that to templates where you are forced to always put views in a new file, no matter how tiny and insignificant it is.")
+    div {
+      p("Now a full HTML/CSS page will be rendered, including a ")
+      code("head")
+      p(" tag with stylesheets, a header with navigation links, the main content in the middle, and a footer with a copyright notice. The best part is that because everything is just simple Swift data we are free to arrange and compose this data in anyway we want. In particular, we are allowed to keep all of our helper nodes in the same file if we want, or we can break them out into multiple files if that works better for us. Compare that to templates where you are forced to always put views in a new file, no matter how tiny and insignificant it is.")
+    }
   }
 }
 
