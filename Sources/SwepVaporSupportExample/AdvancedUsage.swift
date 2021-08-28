@@ -60,7 +60,7 @@ let advancedUsage = {
     """)
     p("Then, to assemble the parts in a consistent manner we can simply create a function that takes a node as input, which represents the main, central content of your page, and it will return a new node, which is the fully constructed HTML/CSS page:")
     pre("""
-    func layout<A: HtmlNode & ChildOfAny>(content pageContent: A) -> some HtmlNode {
+    func layout<A: HtmlNode & ChildOfAny>(content pageContent: A) -> Document {
       return document {
         html {
           // Include inline stylesheets

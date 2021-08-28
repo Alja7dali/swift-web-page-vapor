@@ -131,9 +131,9 @@
         "package": "swift-web-page",
         "repositoryURL": "https://github.com/alja7dali/swift-web-page",
         "state": {
-          "branch": "master",
+          "branch": null,
           "revision": "48a5f31dccb5803f8b1d68c6b8be0500793777b2",
-          "version": null
+          "version": "0.0.1"
         }
       },
       {
