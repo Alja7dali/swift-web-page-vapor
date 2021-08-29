@@ -102,7 +102,13 @@ let advancedUsage = {
     p {
       text("Now a full HTML/CSS page will be rendered, including a ")
       code("head")
-      text(" tag with stylesheets, a header with navigation links, the main content in the middle, and a footer with a copyright notice. The best part is that because everything is just simple Swift data we are free to arrange and compose this data in anyway we want. In particular, we are allowed to keep all of our helper nodes in the same file if we want, or we can break them out into multiple files if that works better for us. Compare that to templates where you are forced to always put views in a new file, no matter how tiny and insignificant it is.")
+      text(" tag with stylesheets, a ")
+      code("header")
+      text(" with navigation links, the ")
+      code("main")
+      text(" content in the middle, and a ")
+      code("footer")
+      text(" with a copyright notice. The best part is that because everything is just simple Swift data we are free to arrange and compose this data in anyway we want. In particular, we are allowed to keep all of our helper nodes in the same file if we want, or we can break them out into multiple files if that works better for us. Compare that to templates where you are forced to always put views in a new file, no matter how tiny and insignificant it is.")
     }
   }
 }
