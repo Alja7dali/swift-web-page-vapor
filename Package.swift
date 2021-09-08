@@ -4,8 +4,22 @@ import PackageDescription
 let Swep:  Target.Dependency = .product(name: "Swep", package: "swift-web-page")
 let Vapor: Target.Dependency = .product(name: "Vapor", package: "vapor")
 
+let supportedPlatforms: Optional<Array<SupportedPlatform>>
+
+#if os(macOS) || os(iOS) || os(tvOS) || os(watchOS)
+supportedPlatforms = [
+  .macOS(.v10_15),
+  .iOS(.v13),
+  .tvOS(.v13),
+  .watchOS(.v6)
+]
+#else
+supportedPlatforms = nil
+#endif
+
 let package = Package(
   name: "swift-web-page-vapor",
+  platforms: supportedPlatforms,
   products: [
     .library(name: "SwepVaporSupport", targets: ["SwepVaporSupport"]),
     .executable(name: "SwepVaporSupportExample", targets: ["SwepVaporSupportExample"]),
